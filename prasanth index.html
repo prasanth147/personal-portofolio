@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasanth Boyalla | Software Developer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+            color: #d1d5db; /* text-gray-300 */
+        }
+        /* Style for the active nav link */
+        .nav-link-active {
+            color: #38bdf8; /* text-sky-400 */
+        }
+        /* Add a subtle transition for smooth color changes */
+        nav a {
+            transition: color 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-80 backdrop-blur-sm shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-white">Prasanth Boyalla</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="hover:text-sky-400 nav-link">About</a>
+                <a href="#skills" class="hover:text-sky-400 nav-link">Skills</a>
+                <a href="#experience" class="hover:text-sky-400 nav-link">Experience</a>
+                <a href="#projects" class="hover:text-sky-400 nav-link">Projects</a>
+                <a href="#contact" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-4 py-2 rounded-lg transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <i data-feather="menu"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
+            <a href="#skills" class="block py-2 px-4 text-sm hover:bg-gray-700">Skills</a>
+            <a href="#experience" class="block py-2 px-4 text-sm hover:bg-gray-700">Experience</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-700">Projects</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24">
+
+        <!-- Home Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center text-center">
+            <div class="max-w-3xl">
+                <img src="https://placehold.co/150x150/111827/38bdf8?text=PB" alt="Prasanth Boyalla" class="w-40 h-40 rounded-full mx-auto mb-8 border-4 border-sky-500 shadow-lg">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">Prasanth Boyalla</h1>
+                <p class="text-xl md:text-2xl text-sky-400 mb-8">Aspiring Software Developer</p>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                    Hands-on experience in full-stack development and machine learning. Eager to apply problem-solving skills and a passion for technology to create robust software solutions.
+                </p>
+                <div class="mt-10">
+                    <a href="#projects" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3">
+                    <img src="https://placehold.co/400x400/1f2937/d1d5db?text=Developer" alt="About Prasanth" class="rounded-lg shadow-2xl w-full">
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-lg mb-4">
+                        Hello! I'm Prasanth, a passionate and driven software developer currently pursuing my B.Tech in Computer Science & Engineering. My journey into the world of technology has been fueled by a deep curiosity and a desire to build things that make a difference.
+                    </p>
+                    <p class="text-lg mb-4">
+                        Through my internships at companies like Infosys and Slash Mark IT Solutions, I've had the opportunity to work on the entire software development lifecycle, from designing front-end components with HTML, CSS, and JavaScript to developing back-end logic in Python.
+                    </p>
+                    <p class="text-lg">
+                        I'm particularly fascinated by the power of Machine Learning and have developed projects like a Fake Currency Detection system. I'm always eager to learn new technologies and take on challenging problems. When I'm not coding, I enjoy exploring new tech trends and participating in hackathons.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-gray-800 rounded-2xl">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
+                <div class="flex flex-col items-center p-4 bg-gray-900 rounded-lg shadow-lg hover:shadow-sky-500/20 transition-shadow">
+                    <i data-feather="code" class="w-12 h-12 text-sky-400 mb-3"></i>
+                    <h3 class="font-semibold text-white">Python</h3>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-900 rounded-lg shadow-lg hover:shadow-sky-500/20 transition-shadow">
+                     <i data-feather="coffee" class="w-12 h-12 text-sky-400 mb-3"></i>
+                    <h3 class="font-semibold text-white">Java</h3>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-900 rounded-lg shadow-lg hover:shadow-sky-500/20 transition-shadow">
+                    <i data-feather="database" class="w-12 h-12 text-sky-400 mb-3"></i>
+                    <h3 class="font-semibold text-white">SQL</h3>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-900 rounded-lg shadow-lg hover:shadow-sky-500/20 transition-shadow">
+                    <i data-feather="layout" class="w-12 h-12 text-sky-400 mb-3"></i>
+                    <h3 class="font-semibold text-white">HTML, CSS, JS</h3>
+                </div>
+                 <div class="flex flex-col items-center p-4 bg-gray-900 rounded-lg shadow-lg hover:shadow-sky-500/20 transition-shadow">
+                    <i data-feather="cpu" class="w-12 h-12 text-sky-400 mb-3"></i>
+                    <h3 class="font-semibold text-white">Data Structures</h3>
+                </div>
+                 <div class="flex flex-col items-center p-4 bg-gray-900 rounded-lg shadow-lg hover:shadow-sky-500/20 transition-shadow">
+                    <i data-feather="share-2" class="w-12 h-12 text-sky-400 mb-3"></i>
+                    <h3 class="font-semibold text-white">OOP</h3>
+                </div>
+                 <div class="flex flex-col items-center p-4 bg-gray-900 rounded-lg shadow-lg hover:shadow-sky-500/20 transition-shadow">
+                    <i data-feather="git-branch" class="w-12 h-12 text-sky-400 mb-3"></i>
+                    <h3 class="font-semibold text-white">Git</h3>
+                </div>
+                 <div class="flex flex-col items-center p-4 bg-gray-900 rounded-lg shadow-lg hover:shadow-sky-500/20 transition-shadow">
+                    <i data-feather="hard-drive" class="w-12 h-12 text-sky-400 mb-3"></i>
+                    <h3 class="font-semibold text-white">DBMS</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">Experience</h2>
+            <div class="relative max-w-3xl mx-auto">
+                <!-- Vertical line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-700"></div>
+                
+                <!-- Experience Item 1 -->
+                <div class="mb-8 flex justify-between items-center w-full">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-sky-500 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                    </div>
+                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="mb-2 font-bold text-white text-xl">Infosys Virtual Internship</h3>
+                        <p class="text-sm leading-snug tracking-wide text-gray-400">June 2025 - July 2025</p>
+                        <p class="text-md mt-3 text-gray-300">Developed applications using the Python stack, focusing on clean, efficient, and maintainable code.</p>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-sky-500 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+                    </div>
+                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="mb-2 font-bold text-white text-xl">Full Stack Web Dev Intern</h3>
+                        <p class="text-sm leading-snug tracking-wide text-gray-400">Slash Mark IT Solutions | Dec 2024 - Mar 2025</p>
+                        <p class="text-md mt-3 text-gray-300">Engineered and deployed web application components, contributing to both front-end and back-end development.</p>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="mb-8 flex justify-between items-center w-full">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-sky-500 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+                    </div>
+                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="mb-2 font-bold text-white text-xl">Summer Intern</h3>
+                        <p class="text-sm leading-snug tracking-wide text-gray-400">ByteXL | Summer 2024</p>
+                        <p class="text-md mt-3 text-gray-300">Acquired foundational knowledge of industry-standard software development practices and agile methodologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Project+1" alt="Fake Currency Detection" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Fake Currency Detection System</h3>
+                        <p class="text-gray-400 mb-4">Architected a machine learning pipeline in Python to classify currency with over 90% accuracy. Engineered an image processing module to extract key visual features.</p>
+                        <div class="flex space-x-2">
+                            <span class="bg-sky-900 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Machine Learning</span>
+                            <span class="bg-sky-900 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-sky-900 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Image Processing</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Project+2" alt="Sentiment Analysis Tool" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Sentiment Analysis Tool</h3>
+                        <p class="text-gray-400 mb-4">Built a natural language processing (NLP) application using Python and the NLTK library to determine text sentiment. Implemented text preprocessing and feature extraction.</p>
+                         <div class="flex space-x-2">
+                            <span class="bg-sky-900 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">NLP</span>
+                            <span class="bg-sky-900 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-sky-900 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">NLTK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Get In Touch</h2>
+            <p class="text-gray-400 mb-8">I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team.</p>
+            <a href="mailto:prasanthboyalla@gmail.com" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full transition-colors text-lg">
+                Say Hello
+            </a>
+            <div class="flex justify-center space-x-6 mt-10">
+                <a href="https://linkedin.com/in/prasanth-boyalla" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-sky-400">
+                    <i data-feather="linkedin" class="w-8 h-8"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-sky-400">
+                    <i data-feather="github" class="w-8 h-8"></i>
+                </a>
+            </div>
+            <p class="text-gray-500 text-sm mt-10">&copy; 2025 Prasanth Boyalla. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Feather Icons
+        feather.replace();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (const link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+
+        // Active Nav Link Highlighting on Scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                // Add a 150px offset to trigger the highlight a bit earlier
+                if (pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('nav-link-active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('nav-link-active');
+                }
+            });
+        });
+
+    </script>
+
+</body>
+</html>
